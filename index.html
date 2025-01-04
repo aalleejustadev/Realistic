@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="site-header">
       <div class="container">
         <div class="grid grid-cols-3">
           <div class="site-header__logo">
-            <div class="text-dark text-2xl weight-600">Realistic</div>
+            <a href="/index.html">
+              <div class="text-dark text-2xl weight-600">Realistic</div>
+            </a>
           </div>
-          <div class="site-header__nav">
-            <nav class="navigation">
-              <ul class="navigation__menu flex gap-3 items-center">
+          <div class="site-header__nav flex items-center">
+            <nav class="navigation w-full">
+              <ul
+                class="navigation__menu flex gap-3 justify-center items-center">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Properties</a></li>
                 <li><a href="#">Agents</a></li>
@@ -32,6 +36,33 @@
         </div>
       </div>
     </header>
+
+    <main class="site-main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="badge flex justify-center">
+              <span
+                class="badge__text bg-primary__light text-primary pt-1 pb-1 pl-2 pr-2 weight-500 rounded-full">
+                Real Estate
+              </span>
+            </div>
+            <h1
+              class="hero__title text-dark text-6xl mt-2 mb-8 text-center weight-500">
+              Find the home that fits your life
+              <span class="text-primary">perfectly</span>
+            </h1>
+            <div class="hero__image rounded-3xl overflow-hidden">
+              <img
+                class="size-100 cover"
+                src="/assets/images/hero.jpg"
+                alt="Hero Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- App -->
     <script src="js/app.js"></script>
