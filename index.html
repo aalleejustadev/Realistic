@@ -10,14 +10,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main>
+    <header class="site-header">
       <div class="container">
-        <div class="card">
-          <!-- Your HTML file -->
-          <i class="ti ti-smart-home" stroke-width="1"></i>
+        <div class="grid grid-cols-3">
+          <div class="site-header__logo">
+            <div class="text-dark text-2xl weight-600">Realistic</div>
+          </div>
+          <div class="site-header__nav">
+            <nav class="navigation">
+              <ul class="navigation__menu flex gap-3 items-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Blogs </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="site-header__actions flex justify-end items-center">
+            <a href="#" class="btn btn-primary">Contact Us</a>
+          </div>
         </div>
       </div>
-    </main>
+    </header>
 
     <!-- App -->
     <script src="js/app.js"></script>
