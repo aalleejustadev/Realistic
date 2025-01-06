@@ -98,3 +98,51 @@
 .our-mission__signature {
   width: 118px;
 }
+
+/* How it works */
+.how-it-works {
+  padding: 4.8rem 0;
+}
+.tabs__item {
+  padding-left: 3rem;
+  border-left: 4px solid var(--color-primary);
+  filter: grayscale(1);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tabs__item:hover,
+.tabs__item.active {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.image-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+}
+.image-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+}
+.how-it-works__tabs__content {
+  height: 410px;
+}
+
+/* Why choose us */
+.why-choose-us {
+  padding: 4.8rem 0;
+}
+.why-choose-us__image {
+  height: 650px;
+}
+.why-choose-us__content {
+  position: absolute;
+  top: 50%;
+  right: 5rem;
+  transform: translateY(-50%);
+}

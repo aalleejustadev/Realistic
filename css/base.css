@@ -285,6 +285,9 @@ a {
 .mt-8 {
   margin-top: 8rem;
 }
+.mb-0-5 {
+  margin-bottom: 0.5rem;
+}
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -352,6 +355,9 @@ a {
 }
 .h-full {
   height: 100%;
+}
+.max-h-full {
+  max-height: 100%;
 }
 .size-100 {
   width: 100%;
@@ -458,4 +464,13 @@ a {
 }
 .hover\:underline:hover {
   text-decoration: underline;
+}
+
+/* Icon list */
+.icon-list {
+  max-width: 365px;
+}
+.icon-list__text p {
+  width: 90%;
+  max-width: 100%;
 }
