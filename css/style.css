@@ -146,3 +146,11 @@
   right: 5rem;
   transform: translateY(-50%);
 }
+
+/* Blogs */
+.blogs {
+  padding: 4.8rem 0;
+}
+.blog__image {
+  height: 270px;
+}
