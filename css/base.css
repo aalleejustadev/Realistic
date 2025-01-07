@@ -353,6 +353,9 @@ a {
 .max-w-sm {
   max-width: 650px;
 }
+.max-w-md {
+  max-width: 720px;
+}
 .h-full {
   height: 100%;
 }
@@ -394,6 +397,10 @@ a {
 .btn-dark {
   background-color: var(--color-dark);
   color: var(--color-white);
+}
+.btn-white {
+  background-color: var(--color-white);
+  color: var(--color-dark);
 }
 
 /* Font sizes */

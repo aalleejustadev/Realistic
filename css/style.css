@@ -147,10 +147,24 @@
   transform: translateY(-50%);
 }
 
+/* Testimonials */
+.testimonials {
+  padding: 4.8rem 0;
+}
+
 /* Blogs */
 .blogs {
   padding: 4.8rem 0;
 }
 .blog__image {
   height: 270px;
+}
+
+/* Contact */
+.contact {
+  padding: 4.8rem 0;
+}
+.contact__content {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
