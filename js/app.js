@@ -32,5 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // next code
+  // Testimonials
+  const swiper = new Swiper(".swiper", {
+    // effect: "cube",
+    // effect: "fade",
+    // effect: "coverflow",
+    // effect: "cards",
+    speed: 700,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });

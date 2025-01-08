@@ -151,6 +151,33 @@
 .testimonials {
   padding: 4.8rem 0;
 }
+.testimonial__grid {
+  grid-template-columns: 120px 1fr;
+}
+.testimonial__image {
+  height: 120px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 42px;
+  height: 42px;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.6rem;
+}
+.swiper-button-next {
+  right: 22px;
+}
+.swiper-button-prev {
+  left: 22px;
+}
 
 /* Blogs */
 .blogs {

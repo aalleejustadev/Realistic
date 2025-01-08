@@ -8,6 +8,9 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.26.0/dist/tabler-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -728,7 +731,7 @@
       <section class="testimonials">
         <div class="container">
           <div class="testimonials__inner p-4 rounded-2xl bg-primary__light">
-            <div class="testimonials__top pb-3">
+            <div class="testimonials__top pb-1">
               <div class="section-title max-w-sm mx-auto text-center">
                 <div class="section-title__name"><span>Testimonials</span></div>
                 <h2 class="section-title__title">
@@ -736,7 +739,96 @@
                 </h2>
               </div>
             </div>
-            <div class="testimonials__content">Testimonaisl show up here</div>
+            <div class="testimonials__content max-w-md mx-auto">
+              <!-- Slider main container -->
+              <div class="swiper pb-4">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide pl-4 pr-4">
+                    <div
+                      class="grid testimonial__grid gap-3 text-white pt-5 pb-5 pl-3 pr-3 bg-primary rounded-2xl">
+                      <div
+                        class="testimonial__image rounded-full overflow-hidden">
+                        <img
+                          class="size-100 cover rounded-2xl"
+                          src="/assets/images/testimonials/1.jpg"
+                          alt="Testimonial 1" />
+                      </div>
+                      <div class="testimonial__text">
+                        <p class="text-2xl weight-500 line-h-1-5">
+                          Realestic turned our house hunt into a smooth and
+                          enjoyable experience. Perfect for anyone looking to
+                          buy their first home!
+                        </p>
+                        <div class="mt-2">
+                          <p class="name text-xl weight-500 mb-0-5">
+                            Andy smith
+                          </p>
+                          <p class="place opacity-7 text-sm">Los Angeles, CA</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide pl-4 pr-4">
+                    <div
+                      class="grid testimonial__grid gap-3 text-white pt-5 pb-5 pl-3 pr-3 bg-primary rounded-2xl">
+                      <div
+                        class="testimonial__image rounded-full overflow-hidden">
+                        <img
+                          class="size-100 cover rounded-2xl"
+                          src="/assets/images/testimonials/2.jpg"
+                          alt="Testimonial 2" />
+                      </div>
+                      <div class="testimonial__text">
+                        <p class="text-2xl weight-500 line-h-1-5">
+                          Thanks to Realestic, buying our new home was a breeze.
+                          Ideal for newcomers to the real estate market!
+                        </p>
+                        <div class="mt-2">
+                          <p class="name text-xl weight-500 mb-0-5">
+                            David Wlee
+                          </p>
+                          <p class="place opacity-7 text-sm">California, US</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide pl-4 pr-4">
+                    <div
+                      class="grid testimonial__grid gap-3 text-white pt-5 pb-5 pl-3 pr-3 bg-primary rounded-2xl">
+                      <div
+                        class="testimonial__image rounded-full overflow-hidden">
+                        <img
+                          class="size-100 cover rounded-2xl"
+                          src="/assets/images/testimonials/3.jpg"
+                          alt="Testimonial 3" />
+                      </div>
+                      <div class="testimonial__text">
+                        <p class="text-2xl weight-500 line-h-1-5">
+                          Realestic made purchasing our dream home effortless
+                          and pleasant. A top choice for first-time homebuyers!
+                        </p>
+                        <div class="mt-2">
+                          <p class="name text-xl weight-500 mb-0-5">
+                            Chris Daren
+                          </p>
+                          <p class="place opacity-7 text-sm">Tokyo, Japan</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div
+                  class="swiper-button-prev bg-white text-dark rounded-full"></div>
+                <div
+                  class="swiper-button-next bg-white text-dark rounded-full"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -848,6 +940,8 @@
       </section>
     </main>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- App -->
     <script src="js/app.js"></script>
   </body>
