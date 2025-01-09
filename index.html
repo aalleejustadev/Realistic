@@ -18,8 +18,8 @@
     <!-- Header -->
     <header class="site-header">
       <div class="container">
-        <div class="grid grid-cols-3">
-          <div class="site-header__logo">
+        <div class="grid grid-cols-3 md:grid-cols-2">
+          <div class="site-header__logo md:flex md:items-center">
             <a href="/index.html">
               <div class="text-dark text-2xl weight-600">Realestic</div>
             </a>
@@ -27,7 +27,7 @@
           <div class="site-header__nav flex items-center">
             <nav class="navigation w-full">
               <ul
-                class="navigation__menu flex gap-3 justify-center items-center">
+                class="navigation__menu flex gap-3 justify-center items-center md:gap-3 md:flex-col">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Properties</a></li>
                 <li><a href="#">Agents</a></li>
@@ -35,9 +35,10 @@
               </ul>
             </nav>
           </div>
-          <div class="site-header__actions flex justify-end items-center">
+          <div
+            class="site-header__actions flex justify-end items-center md:gap-1">
             <a href="#" class="btn btn-primary">Contact Us</a>
-            <div class="mobile-menu__trigger">
+            <div class="mobile-menu__trigger hidden md:visible">
               <div class="mobile-menu__icon">
                 <i class="ti ti-menu-deep text-xl"></i>
               </div>
@@ -59,7 +60,7 @@
               </span>
             </div>
             <h1
-              class="hero__title text-dark text-6xl mt-2 mb-8 text-center weight-500">
+              class="hero__title text-dark text-6xl mt-2 mb-8 text-center weight-500 sm:text-4xl xs:mb-5">
               Find the home that fits your life
               <span class="text-primary">perfectly</span>
             </h1>
@@ -77,11 +78,11 @@
       <section class="our-vision">
         <div class="container">
           <div class="our-vision__content">
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-2 gap-6 md:gap-2 sm:grid-col sm:gap-4">
               <div class="col1-2">
-                <div class="section-title">
+                <div class="section-title sm:mb-1">
                   <div class="section-title__name"><span>Our Vision</span></div>
-                  <h2 class="section-title__title">
+                  <h2 class="section-title__title xs:mb-2">
                     The values that drive everything we do
                   </h2>
                 </div>
@@ -91,7 +92,7 @@
               </div>
               <div class="col1-2">
                 <div class="benefits">
-                  <div class="benefits__item flex gap-4 mb-3">
+                  <div class="benefits__item flex gap-4 mb-3 md:gap-2">
                     <div class="benefits__item__icon">
                       <i class="ti ti-smart-home"></i>
                     </div>
@@ -101,13 +102,13 @@
                         Dream Home
                       </h4>
                       <p
-                        class="benefits__item__description text-xl m0 text-grey w-80">
+                        class="benefits__item__description text-xl m0 text-grey w-80 md:w-full">
                         Discover your ideal living space with our premium
                         featured real estate listings.
                       </p>
                     </div>
                   </div>
-                  <div class="benefits__item flex gap-4 mb-3">
+                  <div class="benefits__item flex gap-4 mb-3 md:gap-2">
                     <div class="benefits__item__icon">
                       <i class="ti ti-coin"></i>
                     </div>
@@ -117,13 +118,13 @@
                         Smart Investment
                       </h4>
                       <p
-                        class="benefits__item__description text-xl m0 text-grey w-80">
+                        class="benefits__item__description text-xl m0 text-grey w-80 md:w-full">
                         Secure high-value, future-ready property and investment
                         opportunities today.
                       </p>
                     </div>
                   </div>
-                  <div class="benefits__item flex gap-4">
+                  <div class="benefits__item flex gap-4 md:gap-2">
                     <div class="benefits__item__icon">
                       <i class="ti ti-businessplan"></i>
                     </div>
@@ -133,7 +134,7 @@
                         Luxury Living
                       </h4>
                       <p
-                        class="benefits__item__description text-xl m0 text-grey w-80">
+                        class="benefits__item__description text-xl m0 text-grey w-80 md:w-full">
                         Explore exclusive, sophisticated properties tailored to
                         your perfect lifestyle.
                       </p>
@@ -150,16 +151,17 @@
       <section class="properties">
         <div class="container">
           <div class="properties__top">
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-2 gap-6 md:gap-2 md:grid-col">
               <div class="col1-2">
-                <div class="section-title">
+                <div class="section-title md:mb-1">
                   <div class="section-title__name"><span>Properties</span></div>
                   <h2 class="section-title__title">
                     Ready to buy your dream home? find it here
                   </h2>
                 </div>
               </div>
-              <div class="col1-2 flex justify-end items-center">
+              <div
+                class="col1-2 flex justify-end items-center md:justify-start">
                 <div class="properties__action">
                   <a href="#" class="btn btn-dark">All Properties</a>
                 </div>
@@ -167,7 +169,7 @@
             </div>
           </div>
           <div class="properties__content mt-3">
-            <div class="grid grid-cols-3 gap-2">
+            <div class="grid grid-cols-3 gap-2 md:grid-cols-2 xs:grid-col">
               <div class="property pb-3">
                 <div
                   class="property__image relative rounded-2xl overflow-hidden mb-2">
@@ -482,14 +484,15 @@
               </div>
             </div>
             <div class="features__content">
-              <div class="grid grid-cols-3 gap-6">
+              <div
+                class="grid grid-cols-3 gap-6 md:gap-2 sm:grid-cols-2 sm:gap-4 xs:grid-col xs:gap-2">
                 <div class="feature pb-3">
                   <div
                     class="feature__icon bg-primary__light rounded-lg p-1 flex items-center justify-center w-fit">
                     <i class="ti ti-clipboard-check text-primary text-3xl"></i>
                   </div>
                   <h4 class="text-2xl weight-500 mt-2 mb-2">Expert Guidance</h4>
-                  <p class="text-xl text-grey m0">
+                  <p class="text-xl text-grey m0 xs">
                     Receive professional insights to make informed real estate
                     decisions confidently.
                   </p>
@@ -566,8 +569,9 @@
       <!-- Our mission -->
       <section class="our-mission">
         <div class="container">
-          <div class="our-mission__content grid gap-5 items-center">
-            <div class="our-mission__image rounded-2xl overflow-hidden">
+          <div class="our-mission__content grid gap-5 items-center md:gap-2">
+            <div
+              class="our-mission__image rounded-2xl overflow-hidden sm:w-80 sm:mx-auto xs:w-full">
               <img
                 class="size-100 cover"
                 src="/assets/images/mission-image.jpg"
@@ -608,14 +612,15 @@
             </div>
           </div>
           <div class="how-it-works__content">
-            <div class="grid grid-cols-2 gap-6 items-center pt-3">
-              <div class="col1-2">
+            <div
+              class="grid grid-cols-2 gap-6 items-center pt-3 sm:grid-col-reverse sm:gap-4">
+              <div class="col1-2 sm:order-2">
                 <div class="tabs flex flex-col gap-5">
                   <div class="tabs__item active" data-tab="1">
                     <h3 class="text-2xl weight-500 mb-1-5">
                       Find Your Ideal Property
                     </h3>
-                    <p class="text-xl text-grey m0">
+                    <p class="text-xl text-grey m0 xs:text-base">
                       Browse our extensive listings, filter by location, price,
                       and features to discover your perfect home.
                     </p>
@@ -624,21 +629,21 @@
                     <h3 class="text-2xl weight-500 mb-1-5">
                       Schedule a Viewing
                     </h3>
-                    <p class="text-xl text-grey m0">
+                    <p class="text-xl text-grey m0 xs:text-base">
                       Easily book a property tour online at a time that suits
                       you, or request a virtual walkthrough.
                     </p>
                   </div>
                   <div class="tabs__item" data-tab="3">
                     <h3 class="text-2xl weight-500 mb-1-5">Secure Your Deal</h3>
-                    <p class="text-xl text-grey m0">
+                    <p class="text-xl text-grey m0 xs:text-base">
                       Make an offer or apply for financing through our website,
                       and let our experts guide you.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col1-2">
+              <div class="col1-2 sm:order-1">
                 <div class="how-it-works__tabs__content relative">
                   <div
                     class="image-wrapper rounded-2xl overflow-hidden"
@@ -735,7 +740,8 @@
       <!-- Testimonials -->
       <section class="testimonials">
         <div class="container">
-          <div class="testimonials__inner p-4 rounded-2xl bg-primary__light">
+          <div
+            class="testimonials__inner p-4 rounded-2xl bg-primary__light xs:px-2">
             <div class="testimonials__top pb-1">
               <div class="section-title max-w-sm mx-auto text-center">
                 <div class="section-title__name"><span>Testimonials</span></div>
@@ -750,7 +756,7 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide pl-4 pr-4">
+                  <div class="swiper-slide pl-4 pr-4 xs:px-0">
                     <div
                       class="grid testimonial__grid gap-3 text-white pt-5 pb-5 pl-3 pr-3 bg-primary rounded-2xl">
                       <div
@@ -775,7 +781,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide pl-4 pr-4">
+                  <div class="swiper-slide pl-4 pr-4 xs:px-0">
                     <div
                       class="grid testimonial__grid gap-3 text-white pt-5 pb-5 pl-3 pr-3 bg-primary rounded-2xl">
                       <div
@@ -799,7 +805,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide pl-4 pr-4">
+                  <div class="swiper-slide pl-4 pr-4 xs:px-0">
                     <div
                       class="grid testimonial__grid gap-3 text-white pt-5 pb-5 pl-3 pr-3 bg-primary rounded-2xl">
                       <div
@@ -829,9 +835,9 @@
 
                 <!-- If we need navigation buttons -->
                 <div
-                  class="swiper-button-prev bg-white text-dark rounded-full"></div>
+                  class="swiper-button-prev bg-white text-dark rounded-full xs:hidden"></div>
                 <div
-                  class="swiper-button-next bg-white text-dark rounded-full"></div>
+                  class="swiper-button-next bg-white text-dark rounded-full xs:hidden"></div>
               </div>
             </div>
           </div>
@@ -850,7 +856,7 @@
             </div>
           </div>
           <div class="blogs__content pt-2">
-            <div class="grid grid-cols-3 gap-3">
+            <div class="grid grid-cols-3 gap-3 sm:grid-col">
               <div class="blog">
                 <div class="blog__image rounded-2xl overflow-hidden mb-2">
                   <a href="#">
@@ -935,7 +941,7 @@
             class="contact__content bg-primary text-white p-3 rounded-2xl text-center">
             <div class="max-w-md mx-auto">
               <p class="text-2xl weight-500 mb-2">Want to Book a Call?</p>
-              <h3 class="text-5xl weight-500 mb-5">
+              <h3 class="text-5xl weight-500 mb-5 xs:text-3xl">
                 Ready to make your step in real state? Book Now.
               </h3>
               <a href="#" class="btn btn-white">View Properties </a>
@@ -949,9 +955,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content pb-5">
-          <div class="grid grid-cols-2 gap-3">
+          <div class="grid grid-cols-2 gap-3 md:grid-col">
             <div class="footer-text">
-              <p class="text-3xl weight-500 mb-7 max-w-xs">
+              <p class="text-3xl weight-500 mb-7 max-w-xs md:mb-3">
                 Discover Real state Ideas from your own Ease!
               </p>
               <div class="footer-socials">
@@ -980,7 +986,7 @@
                 </div>
               </div>
             </div>
-            <div class="footer-links grid grid-cols-3 gap-2">
+            <div class="footer-links grid grid-cols-3 gap-2 xs:grid-col">
               <div class="footer-links__wrapper">
                 <h4 class="text-xl weight-500 mb-1-5">Quick Links</h4>
                 <ul class="footer-links__list">
@@ -1030,7 +1036,7 @@
                     </a>
                   </li>
                   <li class="footer-links__item">
-                    `<a href="#" class="footer-links__link">Privacy Policy</a>
+                    <a href="#" class="footer-links__link">Privacy Policy</a>
                   </li>
                   <li class="footer-links__item">
                     <a href="#" class="footer-links__link">Cookie Policy</a>
