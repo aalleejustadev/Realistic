@@ -48,4 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  // Mobile menu
+  const mobileMenu = document.querySelector(".site-header__nav");
+  const mobileMenuIcon = document.querySelector(".mobile-menu__trigger");
+
+  mobileMenuIcon.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!mobileMenu.contains(e.target) && !mobileMenuIcon.contains(e.target)) {
+      mobileMenu.classList.remove("active");
+    }
+  });
 });
