@@ -85,7 +85,11 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1500,
     delay: 400,
     reset: false,
+    mobile: true,
   });
+
+  const isMobile = window.innerWidth <= 820;
+  const getOrigin = (defaultOrigin) => (isMobile ? "bottom" : defaultOrigin);
 
   // Hero section
   sr.reveal(".hero__content", {
@@ -95,11 +99,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Our Vision section
   sr.reveal(".our-vision .col1-2:first-child", {
-    origin: "left",
+    origin: getOrigin("left"),
     delay: 300,
   });
   sr.reveal(".our-vision .col1-2:last-child", {
-    origin: "right",
+    origin: getOrigin("right"),
     delay: 300,
   });
 
@@ -117,17 +121,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Our Mission
   sr.reveal(".our-mission__image", {
-    origin: "left",
+    origin: getOrigin("left"),
     delay: 300,
   });
   sr.reveal(".our-mission__text", {
-    origin: "right",
+    origin: getOrigin("right"),
     delay: 300,
   });
 
   // How it works
   sr.reveal(".tabs__item", {
-    origin: "right",
+    origin: getOrigin("right"),
     interval: 200,
   });
   sr.reveal(".how-it-works__content .col1-2:last-child", {
@@ -137,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Why choose us
   sr.reveal(".why-choose-us__content", {
-    origin: "right",
+    origin: getOrigin("right"),
     delay: 200,
   });
 

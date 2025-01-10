@@ -299,4 +299,7 @@
   .tabs__item {
     padding-left: 2rem;
   }
+  .site-header .grid {
+    grid-template-columns: 100px 1fr;
+  }
 }
