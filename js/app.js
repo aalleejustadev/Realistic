@@ -32,16 +32,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Testimonials
+  /**
+   * Testimonials
+   */
   const swiper = new Swiper(".swiper", {
     // effect: "cube",
     // effect: "fade",
     // effect: "coverflow",
     // effect: "cards",
+    loop: true,
+    effect: "fade",
     speed: 700,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    fadeEffect: {
+      crossFade: true,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -49,7 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  // Mobile menu
+  /**
+   * Mobile menu
+   */
   const mobileMenu = document.querySelector(".site-header__nav");
   const mobileMenuIcon = document.querySelector(".mobile-menu__trigger");
 
@@ -57,10 +71,81 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.toggle("active");
   });
 
-  // Close mobile menu when clicking outside
   document.addEventListener("click", (e) => {
     if (!mobileMenu.contains(e.target) && !mobileMenuIcon.contains(e.target)) {
       mobileMenu.classList.remove("active");
     }
+  });
+
+  /**
+   * Scroll Reveal
+   */
+  const sr = ScrollReveal({
+    distance: "60px",
+    duration: 1500,
+    delay: 400,
+    reset: false,
+  });
+
+  // Hero section
+  sr.reveal(".hero__content", {
+    origin: "bottom",
+    delay: 200,
+  });
+
+  // Our Vision section
+  sr.reveal(".our-vision .col1-2:first-child", {
+    origin: "left",
+    delay: 300,
+  });
+  sr.reveal(".our-vision .col1-2:last-child", {
+    origin: "right",
+    delay: 300,
+  });
+
+  // Properties
+  sr.reveal(".property", {
+    origin: "bottom",
+    interval: 200, // Creates a nice stagger effect
+  });
+
+  // Features
+  sr.reveal(".feature", {
+    origin: "bottom",
+    interval: 200,
+  });
+
+  // Our Mission
+  sr.reveal(".our-mission__image", {
+    origin: "left",
+    delay: 300,
+  });
+  sr.reveal(".our-mission__text", {
+    origin: "right",
+    delay: 300,
+  });
+
+  // How it works
+  sr.reveal(".tabs__item", {
+    origin: "right",
+    interval: 200,
+  });
+
+  // Why choose us
+  sr.reveal(".why-choose-us__content", {
+    origin: "right",
+    delay: 200,
+  });
+
+  // Testimonials
+  sr.reveal(".testimonials__content", {
+    origin: "bottom",
+    delay: 200,
+  });
+
+  // Blogs
+  sr.reveal(".blog", {
+    origin: "bottom",
+    interval: 200,
   });
 });
