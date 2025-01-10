@@ -130,6 +130,10 @@ document.addEventListener("DOMContentLoaded", () => {
     origin: "right",
     interval: 200,
   });
+  sr.reveal(".how-it-works__content .col1-2:last-child", {
+    origin: "bottom",
+    interval: 200,
+  });
 
   // Why choose us
   sr.reveal(".why-choose-us__content", {
